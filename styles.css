@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martian+Mono:wght@100..800&display=swap");
+
+:root {
+  /* colours */
+  --neutral-900: hsl(194, 78%, 11%);
+  --neutral-700: hsl(195, 23%, 28%);
+  --neutral-200: hsl(17, 12%, 89%);
+  --neutral-100: hsl(17, 41%, 97%);
+  --neutral: hsl(0, 0, 100%);
+  --salmon-500: hsl(22, 99%, 72%);
+  --salmon-100: hsl(22, 100%, 91%);
+  --salmon-50: hsl(23, 100%, 97%);
+  --text-gradient: linear-gradient(107deg, #ff9a60 -11.37%, #062630 61.84%);
+  --gradient: linear-gradient(90deg, #ffe2d1 0%, #fff5ef 100%);
+
+  /*  typography */
+  --font-primary: "martian mono", monospace;
+  --font-secondary: "inter", sans-serif;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  --font-size-1: clamp(3.8rem, calc(1.51rem + 6.11vw), 6.2rem);
+  --font-size-2: clamp(3.4rem, calc(1.86rem + 4.1vw), 5rem);
+  --font-size-3: clamp(2.4rem, calc(1.44rem + 2.56vw), 3.4rem);
+  --font-size-4: clamp(2.2rem, calc(2.01rem + 0.51vw), 2.4rem);
+  --font-size-5: clamp(1.8rem, calc(1.61rem + 0.51vw), 2rem);
+  --font-size-6: clamp(1.6rem, calc(1.41rem + 0.51vw), 1.8rem);
+  --font-size-7: clamp(1.2rem, calc(1.01rem + 0.51vw), 1.4rem);
+
+  --line-height-1: 1;
+  --line-height-11: 1.1;
+  --line-height-12: 1.2;
+  --line-height-13: 1.3;
+  --line-height-14: 1.4;
+
+  --letter-spacing-1: -0.05rem;
+  --letter-spacing-2: -0.1rem;
+  --letter-spacing-3: -0.2rem;
+
+  /* spacing */
+  --spacing-0: 0;
+  --spacing-2: 0.2rem;
+  --spacing-4: 0.4rem;
+  --spacing-6: 0.6rem;
+  --spacing-8: 0.8rem;
+  --spacing-10: 1rem;
+  --spacing-12: 1.2rem;
+  --spacing-16: 1.6rem;
+  --spacing-20: 2rem;
+  --spacing-24: 2.4rem;
+  --spacing-32: 3.2rem;
+  --spacing-40: 4rem;
+  --spacing-48: 4.8rem;
+  --spacing-64: 6.4rem;
+  --spacing-80: 8rem;
+
+  /* border-radius */
+  --radius-0: 0;
+  --radius-4: 0.4rem;
+  --radius-6: 0.6rem;
+  --radius-8: 0.8rem;
+  --radius-10: 1rem;
+  --radius-12: 1.2rem;
+  --radius-16: 1.6rem;
+  --radius-20: 2rem;
+  --radius-24: 2.4rem;
+  --radius-full: 99.9rem;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+ol {
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.btn {
+  padding: 2rem 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  border: 1px solid var(--neutral-900);
+  border-radius: 0.8rem;
+}
+.btn-primary {
+  background: var(--gradient);
+}
+.container {
+  padding-inline: var(--spacing-40);
+}
+.text-preset-1 {
+  font-size: var(--font-size-1);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-12);
+  letter-spacing: var(--letter-spacing-1);
+}
+body {
+  font-family: var(--font-primary);
+  font-size: 1.6rem;
+  line-height: var(--line-height-14);
+}
+header .container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-48);
+  padding-block-start: var(--spacing-24);
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-32);
+}
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-24);
+}
+.hero-info h1 {
+  background: var(--text-gradient);
+  background-clip: text;
+  color: transparent;
+}
