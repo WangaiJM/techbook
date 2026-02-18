@@ -106,12 +106,21 @@ img {
   border: 1px solid var(--neutral-900);
   border-radius: 0.8rem;
 }
+.btn:hover {
+  background-color: var(--salmon-100);
+}
 .btn-primary {
   background: var(--gradient);
 }
 .btn-secondary {
   border-color: var(--salmon-500);
   color: var(--salmon-100);
+}
+.btn-secondary:hover {
+  background: transparent;
+  background-color: var(--neutral);
+  border-color: var(--neutral);
+  color: var(--salmon-50);
 }
 .container {
   padding-inline: var(--spacing-40);
@@ -463,4 +472,13 @@ footer {
     flex-direction: row;
     justify-content: space-between;
   }
+}
+.circle {
+  position: relative;
+}
+.circle::after {
+  position: absolute;
+  content: url(./images/pattern-circle.png);
+  top: -1rem;
+  left: -1rem;
 }
